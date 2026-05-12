@@ -281,9 +281,7 @@
 			flags_inv = HIDEBOOB|HIDECROTCH
 			to_chat(usr, span_warning("Now wearing normally!"))
 	update_icon()
-	if(ismob(loc))
-		var/mob/L = loc
-		L.update_inv_armor()
+	user.update_inv_armor()
 
 /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
 	name = "hierophant's kandys"
